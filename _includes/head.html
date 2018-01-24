@@ -1,38 +1,24 @@
+<head>
 
-<!-- Basic information about this page -->
-<meta charset="UTF-8">
-<link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/assets/img/fav.ico">
-<title>
-	{% if page.title %}
-		{{ page.title }} ::
-	{% endif %}
-	{{ site.title }}
-</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<!-- Meta tag looking for mobile devices -->
-<meta name="viewport" content="initial-scale=1.5">
-<meta name="theme-color" content="#232323">
+  <title>
+    {% if page.title %}{{ page.title | escape }} - {{ site.title | escape }}
+    {% else %}{{ site.title | escape }}{% endif %}
+  </title>
 
-<!-- Good information about this page -->
-<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-<meta name="keywords" content="{{ site.keywords }}{% if page.keywords %}, {{ page.keywords }}{% endif %}">
-<meta name="author" content="{{ site.name }}">
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
-<!-- Feed links -->
-<link rel="alternate" type="application/rss+xml" title="{{ site.name }}'s RSS Feed" href="{{ site.baseurl }}/rss.xml">
-<link rel="alternate" type="application/atom+xml" title="{{ site.name }}'s Atom Feed" href="{{ site.baseurl }}/atom.xml">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
-<!-- Style and scripts files -->
-<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/style.css">
+  <link rel="stylesheet" href="{{"/assets/vendor/bootstrap/css/bootstrap.min.css" | relative_url }}">
 
-<!-- Extra information about this page -->
-<link rel="license" type="text/plain" src="{{ site.baseurl }}/assets/LICENSE">
+  <link rel="stylesheet" href="{{"/assets/vendor/font-awesome/css/font-awesome.min.css" | relative_url }}">
 
-{% include open_graph_cards.html %}
+  <link rel="stylesheet" href="{{"/assets/main.css" | relative_url }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
 
-{% if site.ssl %}
-<script type="text/javascript">
-	if (window.location.protocol != "https:")
-		window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
-</script>
-{% endif %}
+</head>

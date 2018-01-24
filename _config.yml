@@ -1,28 +1,19 @@
-# Site specific settings
-title: "Title to this website"
-name: "Website name"
-keywords: "Key, words, about, this, website"
-baseurl: "/darcli"
-url: "http://website.com"
-description: "Website description"
-cover: "/assets/img/cover.svg"
-fanpage_id: ""
+title:             Clean Blog
+email:             your-email@example.com
+description:       A Blog Theme by Start Bootstrap
+author:            Start Bootstrap
+baseurl:           "/startbootstrap-clean-blog-jekyll"
+url:               "http://blackrockdigital.github.io"
 
-# Site general settings
-lang: "en"
-lang_alternate: "pt_BR"
-ssl: false # It will redirect to https
-
-# Media
-# Just the shortname:
-# facebook: lampiaosec # Rigth
-# facebook: facebook.com/lampiaosec # Wrong
-disqus: test
-twitter: 
-facebook: 
-github: 
-google:
+# Social Profiles
+twitter_username:  SBootstrap
+github_username:   BlackrockDigital
+facebook_username: StartBootstrap
 
 # Build settings
-markdown: kramdown
-permalink: /:categories/:title/
+markdown:          kramdown
+paginate:          5
+paginate_path:     "/posts/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
