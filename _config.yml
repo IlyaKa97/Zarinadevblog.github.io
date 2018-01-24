@@ -1,14 +1,14 @@
 # Site settings
-title:          Tale
-description:    "Minimal Jekyll theme for storytellers"
+title:          DEVBLOG | Zarina:The Game
+description:    "Here I will be all stages of the development of our project."
 
-url:            "https://chesterhow.github.io"
+url:            "https://ilyaka97.github.io/Zarinadevblog.github.io/"
 
 # Author
 author:
-  name:         Chester How
-  url:          https://chester.how
-  email:        chesterhow@gmail.com
+  name:         Zarina:The Game
+  url:          https://ilyaka97.github.io/Zarinadevblog.github.io/
+  email:        zarinathegame@gmail.com
 
 # Build settings
 markdown:       kramdown
