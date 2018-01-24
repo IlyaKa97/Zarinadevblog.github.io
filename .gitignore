@@ -1,5 +1,5 @@
-_site
-node_modules
-Gemfile.lock
-.sass-cache
 *.gem
+.bundle
+.sass-cache
+_site
+Gemfile.lock
