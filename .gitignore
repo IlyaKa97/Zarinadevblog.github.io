@@ -1,5 +1,2 @@
-*.gem
-.bundle
-.sass-cache
+*.swp
 _site
-Gemfile.lock

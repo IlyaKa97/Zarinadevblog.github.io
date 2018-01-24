@@ -1,27 +1,28 @@
-# Site settings
-title:           Zarina:The Game [DevBlog]
-description:    " Zarina:The Game [DevBlog]"
-baseurl:        "/Zarinadevblog.github.io"
-url:            "https://ilyaka97.github.io/Zarinadevblog.github.io/"
+# Site specific settings
+title: "Title to this website"
+name: "Website name"
+keywords: "Key, words, about, this, website"
+baseurl: "/darcli"
+url: "http://website.com"
+description: "Website description"
+cover: "/assets/img/cover.svg"
+fanpage_id: ""
 
-# Author
-author:
-  name:         Zarina:The Game
-  url:          https://ilyaka97.github.io/Zarinadevblog.github.io/
-  email:        zarinathegame@gmail.com
+# Site general settings
+lang: "en"
+lang_alternate: "pt_BR"
+ssl: false # It will redirect to https
+
+# Media
+# Just the shortname:
+# facebook: lampiaosec # Rigth
+# facebook: facebook.com/lampiaosec # Wrong
+disqus: test
+twitter: 
+facebook: 
+github: 
+google:
 
 # Build settings
-markdown:       kramdown
-
-# Assets
-sass:
-  sass_dir:     _sass
-  style:        compressed
-
-# Gems
-plugins:
-  - jekyll-paginate
-
-# Permalinks
-permalink:      /:year-:month-:day/:title
-paginate:       5
+markdown: kramdown
+permalink: /:categories/:title/
