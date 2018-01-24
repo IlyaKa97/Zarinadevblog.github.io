@@ -11,8 +11,7 @@
         </a>
         <ul>
           <li><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
-          <li><a href="{{ site.baseurl }}/">Git Hub</a></li>
-          <li><a href="{{ site.baseurl }}/">Social</a></li>
+          <li><a href="{{ site.baseurl }}/">Posts</a></li>
         </ul>
     </div>
   </nav>
@@ -23,7 +22,7 @@
 
     <footer>
       <span>
-      
+        &copy; <time datetime="{{ site.time }}">{{ site.time | date: '%Y' }}</time> {{ site.author.name }}. Made with Jekyll using the <a href="https://github.com/chesterhow/tale/">Tale</a> theme.
       </span>
     </footer>
   </body>
